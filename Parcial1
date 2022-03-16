@@ -1,0 +1,12 @@
+import random
+validar_numeros = 0
+listNum=[]
+validar_numeros = int(input("¿Cuántos valores va a introducir? "))
+if validar_numeros < 1:
+    print("No se puede realizar la operación")
+else:
+  for i in range(validar_numeros):
+    dato = int(input("Digite Dato: "))
+    listNum.append(dato)
+random.shuffle(listNum)
+print("Los números a validar son: ",listNum)
